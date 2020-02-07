@@ -6,49 +6,27 @@ func foldArray(_ arr: [Int], times: Int) -> [Int] {
     
     while counter != times {
         let odd: Bool = { if mutableArr.count % 2 == 0 { return true } else { return false } }()
-        if odd {
-            print("\tODD counter = \(counter)")
-            var index = 0
-            for element in mutableArr {
-                if mutableArr.count == 1 { break }
-                print("Element[\(index)] = \(element)")
-                print(mutableArr)
-                if mutableArr[index] != mutableArr.last {
-                    let el =  mutableArr.removeLast()
-                    print("mutableArr[\(index)] (\(mutableArr[index])) += lastElement (\(el)) \n")
-                    mutableArr[index] += el
-                    index += 1
-                }
-                if mutableArr.count == index {
-                    break
-                }
+        var index = 0
+        
+        for _ in mutableArr {
+            if mutableArr.count == 1 { break }
+            
+            let el =  mutableArr.removeLast()
+            mutableArr[index] += el
+            index += 1
+            
+            if odd && mutableArr.count == index {
+                break
+            } else if mutableArr.count == (index + 1) {
+                break
             }
-            counter += 1
-            print("finalArr = \(mutableArr)")
-        } else {
-            print("\tEVEN counter = \(counter)")
-            var index = 0
-            for element in mutableArr {
-                if mutableArr.count == 1 { break }
-                print("Element[\(index)] = \(element)")
-                print(mutableArr)
-                if mutableArr[index] != mutableArr.last {
-                    let el =  mutableArr.removeLast()
-                    print("mutableArr[\(index)] (\(mutableArr[index])) += lastElement (\(el)) \n")
-                    mutableArr[index] += el
-                    index += 1
-                }
-                if mutableArr.count == index {
-                    break
-                }
-            }
-            counter += 1
-            print("finalArr = \(mutableArr)")
         }
+        counter += 1
     }
     
     return mutableArr
 }
 
-var foldedArr = foldArray([1,2,2,5,3,5], times: 3)
+var foldedArr = foldArray([1,2,2,5,3,5], times: 2)
+//var foldedArr = foldArray([0, 0, 0, 0, 0, 0, 0, 0, 0, 0], times: 4)
 print(foldedArr)
