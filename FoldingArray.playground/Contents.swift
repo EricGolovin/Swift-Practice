@@ -28,5 +28,7 @@ func foldArray(_ arr: [Int], times: Int) -> [Int] {
 }
 
 var foldedArr = foldArray([1,2,2,5,3,5], times: 2)
-//var foldedArr = foldArray([0, 0, 0, 0, 0, 0, 0, 0, 0, 0], times: 4)
+var foldedArrOfZeros = foldArray([0, 0, 0, 0, 0, 0, 0, 0, 0, 0], times: 4)
+
 print(foldedArr)
+print(foldedArrOfZeros)
