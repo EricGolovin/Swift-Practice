@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,14 @@
 		E900AC9C240438CE00C1BE96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E900AC9B240438CE00C1BE96 /* Assets.xcassets */; };
 		E900AC9F240438CE00C1BE96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E900AC9D240438CE00C1BE96 /* LaunchScreen.storyboard */; };
 		E900ACAA240438CE00C1BE96 /* Empty_WindowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E900ACA9240438CE00C1BE96 /* Empty_WindowTests.swift */; };
+		E9A746192405BBA1002BABC5 /* MyCoolFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9A746102405BBA1002BABC5 /* MyCoolFramework.framework */; };
+		E9A746202405BBA1002BABC5 /* MyCoolFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A7461F2405BBA1002BABC5 /* MyCoolFrameworkTests.swift */; };
+		E9A746222405BBA1002BABC5 /* MyCoolFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = E9A746122405BBA1002BABC5 /* MyCoolFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9A746312405C240002BABC5 /* ObjectFromFramework.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A746302405C240002BABC5 /* ObjectFromFramework.swift */; };
+		E9A746332405C3A7002BABC5 /* MyCoolFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9A746102405BBA1002BABC5 /* MyCoolFramework.framework */; };
+		E9A746342405C3A7002BABC5 /* MyCoolFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E9A746102405BBA1002BABC5 /* MyCoolFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E9A746382405C598002BABC5 /* MyCoolFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9A746102405BBA1002BABC5 /* MyCoolFramework.framework */; };
+		E9A746422405C63E002BABC5 /* MyCoolPackage in Frameworks */ = {isa = PBXBuildFile; productRef = E9A746412405C63E002BABC5 /* MyCoolPackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,7 +33,42 @@
 			remoteGlobalIDString = E900AC8B240438CD00C1BE96;
 			remoteInfo = "Empty Window";
 		};
+		E9A7461A2405BBA1002BABC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E900AC84240438CD00C1BE96 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9A7460F2405BBA1002BABC5;
+			remoteInfo = MyCoolFramework;
+		};
+		E9A7461C2405BBA1002BABC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E900AC84240438CD00C1BE96 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E900AC8B240438CD00C1BE96;
+			remoteInfo = "Empty Window";
+		};
+		E9A746232405BBA1002BABC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E900AC84240438CD00C1BE96 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9A7460F2405BBA1002BABC5;
+			remoteInfo = MyCoolFramework;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E9A746352405C3A7002BABC5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E9A746342405C3A7002BABC5 /* MyCoolFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E900AC8C240438CD00C1BE96 /* Empty Window.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Empty Window.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +83,14 @@
 		E900ACA5240438CE00C1BE96 /* Empty WindowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Empty WindowTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E900ACA9240438CE00C1BE96 /* Empty_WindowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empty_WindowTests.swift; sourceTree = "<group>"; };
 		E900ACAB240438CE00C1BE96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9A746102405BBA1002BABC5 /* MyCoolFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyCoolFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9A746122405BBA1002BABC5 /* MyCoolFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCoolFramework.h; sourceTree = "<group>"; };
+		E9A746132405BBA1002BABC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9A746182405BBA1002BABC5 /* MyCoolFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCoolFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9A7461F2405BBA1002BABC5 /* MyCoolFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCoolFrameworkTests.swift; sourceTree = "<group>"; };
+		E9A746212405BBA1002BABC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9A746302405C240002BABC5 /* ObjectFromFramework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectFromFramework.swift; sourceTree = "<group>"; };
+		E9A746362405C570002BABC5 /* MyCoolPackage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MyCoolPackage; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +98,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9A746382405C598002BABC5 /* MyCoolFramework.framework in Frameworks */,
+				E9A746422405C63E002BABC5 /* MyCoolPackage in Frameworks */,
+				E9A746332405C3A7002BABC5 /* MyCoolFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,15 +111,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E9A7460D2405BBA1002BABC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9A746152405BBA1002BABC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9A746192405BBA1002BABC5 /* MyCoolFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		E900AC83240438CD00C1BE96 = {
 			isa = PBXGroup;
 			children = (
+				E9A746362405C570002BABC5 /* MyCoolPackage */,
 				E900AC8E240438CD00C1BE96 /* Empty Window */,
 				E900ACA8240438CE00C1BE96 /* Empty WindowTests */,
+				E9A746112405BBA1002BABC5 /* MyCoolFramework */,
+				E9A7461E2405BBA1002BABC5 /* MyCoolFrameworkTests */,
 				E900AC8D240438CD00C1BE96 /* Products */,
+				E9A746372405C598002BABC5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +147,8 @@
 			children = (
 				E900AC8C240438CD00C1BE96 /* Empty Window.app */,
 				E900ACA5240438CE00C1BE96 /* Empty WindowTests.xctest */,
+				E9A746102405BBA1002BABC5 /* MyCoolFramework.framework */,
+				E9A746182405BBA1002BABC5 /* MyCoolFrameworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,7 +177,44 @@
 			path = "Empty WindowTests";
 			sourceTree = "<group>";
 		};
+		E9A746112405BBA1002BABC5 /* MyCoolFramework */ = {
+			isa = PBXGroup;
+			children = (
+				E9A746122405BBA1002BABC5 /* MyCoolFramework.h */,
+				E9A746132405BBA1002BABC5 /* Info.plist */,
+				E9A746302405C240002BABC5 /* ObjectFromFramework.swift */,
+			);
+			path = MyCoolFramework;
+			sourceTree = "<group>";
+		};
+		E9A7461E2405BBA1002BABC5 /* MyCoolFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				E9A7461F2405BBA1002BABC5 /* MyCoolFrameworkTests.swift */,
+				E9A746212405BBA1002BABC5 /* Info.plist */,
+			);
+			path = MyCoolFrameworkTests;
+			sourceTree = "<group>";
+		};
+		E9A746372405C598002BABC5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E9A7460B2405BBA1002BABC5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9A746222405BBA1002BABC5 /* MyCoolFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		E900AC8B240438CD00C1BE96 /* Empty Window */ = {
@@ -112,12 +224,17 @@
 				E900AC88240438CD00C1BE96 /* Sources */,
 				E900AC89240438CD00C1BE96 /* Frameworks */,
 				E900AC8A240438CD00C1BE96 /* Resources */,
+				E9A746352405C3A7002BABC5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E9A746242405BBA1002BABC5 /* PBXTargetDependency */,
 			);
 			name = "Empty Window";
+			packageProductDependencies = (
+				E9A746412405C63E002BABC5 /* MyCoolPackage */,
+			);
 			productName = "Empty Window";
 			productReference = E900AC8C240438CD00C1BE96 /* Empty Window.app */;
 			productType = "com.apple.product-type.application";
@@ -140,6 +257,43 @@
 			productReference = E900ACA5240438CE00C1BE96 /* Empty WindowTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		E9A7460F2405BBA1002BABC5 /* MyCoolFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9A746272405BBA1002BABC5 /* Build configuration list for PBXNativeTarget "MyCoolFramework" */;
+			buildPhases = (
+				E9A7460B2405BBA1002BABC5 /* Headers */,
+				E9A7460C2405BBA1002BABC5 /* Sources */,
+				E9A7460D2405BBA1002BABC5 /* Frameworks */,
+				E9A7460E2405BBA1002BABC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyCoolFramework;
+			productName = MyCoolFramework;
+			productReference = E9A746102405BBA1002BABC5 /* MyCoolFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E9A746172405BBA1002BABC5 /* MyCoolFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9A7462B2405BBA1002BABC5 /* Build configuration list for PBXNativeTarget "MyCoolFrameworkTests" */;
+			buildPhases = (
+				E9A746142405BBA1002BABC5 /* Sources */,
+				E9A746152405BBA1002BABC5 /* Frameworks */,
+				E9A746162405BBA1002BABC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9A7461B2405BBA1002BABC5 /* PBXTargetDependency */,
+				E9A7461D2405BBA1002BABC5 /* PBXTargetDependency */,
+			);
+			name = MyCoolFrameworkTests;
+			productName = MyCoolFrameworkTests;
+			productReference = E9A746182405BBA1002BABC5 /* MyCoolFrameworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -153,6 +307,14 @@
 						CreatedOnToolsVersion = 11.3.1;
 					};
 					E900ACA4240438CE00C1BE96 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = E900AC8B240438CD00C1BE96;
+					};
+					E9A7460F2405BBA1002BABC5 = {
+						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
+					};
+					E9A746172405BBA1002BABC5 = {
 						CreatedOnToolsVersion = 11.3.1;
 						TestTargetID = E900AC8B240438CD00C1BE96;
 					};
@@ -173,6 +335,8 @@
 			targets = (
 				E900AC8B240438CD00C1BE96 /* Empty Window */,
 				E900ACA4240438CE00C1BE96 /* Empty WindowTests */,
+				E9A7460F2405BBA1002BABC5 /* MyCoolFramework */,
+				E9A746172405BBA1002BABC5 /* MyCoolFrameworkTests */,
 			);
 		};
 /* End PBXProject section */
@@ -189,6 +353,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E900ACA3240438CE00C1BE96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9A7460E2405BBA1002BABC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9A746162405BBA1002BABC5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -217,6 +395,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E9A7460C2405BBA1002BABC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9A746312405C240002BABC5 /* ObjectFromFramework.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9A746142405BBA1002BABC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9A746202405BBA1002BABC5 /* MyCoolFrameworkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -224,6 +418,21 @@
 			isa = PBXTargetDependency;
 			target = E900AC8B240438CD00C1BE96 /* Empty Window */;
 			targetProxy = E900ACA6240438CE00C1BE96 /* PBXContainerItemProxy */;
+		};
+		E9A7461B2405BBA1002BABC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9A7460F2405BBA1002BABC5 /* MyCoolFramework */;
+			targetProxy = E9A7461A2405BBA1002BABC5 /* PBXContainerItemProxy */;
+		};
+		E9A7461D2405BBA1002BABC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E900AC8B240438CD00C1BE96 /* Empty Window */;
+			targetProxy = E9A7461C2405BBA1002BABC5 /* PBXContainerItemProxy */;
+		};
+		E9A746242405BBA1002BABC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9A7460F2405BBA1002BABC5 /* MyCoolFramework */;
+			targetProxy = E9A746232405BBA1002BABC5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -441,6 +650,103 @@
 			};
 			name = Release;
 		};
+		E9A746282405BBA1002BABC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = U87X99UU87;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MyCoolFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ericgolovin.MyCoolFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E9A746292405BBA1002BABC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = U87X99UU87;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MyCoolFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ericgolovin.MyCoolFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E9A7462C2405BBA1002BABC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U87X99UU87;
+				INFOPLIST_FILE = MyCoolFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ericgolovin.MyCoolFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Empty Window.app/Empty Window";
+			};
+			name = Debug;
+		};
+		E9A7462D2405BBA1002BABC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U87X99UU87;
+				INFOPLIST_FILE = MyCoolFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ericgolovin.MyCoolFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Empty Window.app/Empty Window";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -471,7 +777,32 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		E9A746272405BBA1002BABC5 /* Build configuration list for PBXNativeTarget "MyCoolFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9A746282405BBA1002BABC5 /* Debug */,
+				E9A746292405BBA1002BABC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9A7462B2405BBA1002BABC5 /* Build configuration list for PBXNativeTarget "MyCoolFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9A7462C2405BBA1002BABC5 /* Debug */,
+				E9A7462D2405BBA1002BABC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E9A746412405C63E002BABC5 /* MyCoolPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MyCoolPackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		E900AC98240438CD00C1BE96 /* Empty_Window.xcdatamodeld */ = {
