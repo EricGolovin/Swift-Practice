@@ -10,15 +10,19 @@ import MyCoolFramework
 
 class ViewController: UIViewController {
     
+    @IBOutlet var coolview: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        let arr = Bundle.main.loadNibNamed("View", owner: nil, options: nil)!
-        let v = arr[0] as! UIView
-        self.view.addSubview(v)
+
+//        let arr = Bundle.main.loadNibNamed("View", owner: nil, options: nil)!
+//        let v = arr[0] as! UIView
+//        
+        Bundle.main.loadNibNamed("View", owner: self, options: nil)
+        self.view.addSubview(self.coolview)
     }
     
     let frameworkTesting = ObjectFromFramework(testValue: 33)
     
 }
-
