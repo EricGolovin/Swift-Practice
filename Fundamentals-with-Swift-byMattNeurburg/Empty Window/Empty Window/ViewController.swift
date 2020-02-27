@@ -9,14 +9,16 @@ import UIKit
 import MyCoolFramework
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        let arr = Bundle.main.loadNibNamed("View", owner: nil, options: nil)!
+        let v = arr[0] as! UIView
+        self.view.addSubview(v)
     }
     
-    var test = ObjectFromFramework.self
-    
+    let frameworkTesting = ObjectFromFramework(testValue: 33)
     
 }
 

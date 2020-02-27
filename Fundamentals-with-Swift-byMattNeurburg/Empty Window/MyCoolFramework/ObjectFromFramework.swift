@@ -7,6 +7,10 @@
 
 import Foundation
 
-public struct ObjectFromFramework {
-    public var testValue = 1
+public class ObjectFromFramework {
+    var testValue: Int
+    
+    public init(testValue: Int) {
+        self.testValue = testValue
+    }
 }
