@@ -23,13 +23,20 @@ class ViewController: UIViewController {
 //        self.view.addSubview(self.coolview)
     }
     
+    func dogMyCats(_ s: String) -> String {
+//        return ""
+        return "dogs"
+    }
+    
+    var testValue = 0
+    
     
     @IBAction func buttonPressed(_ sender: Any) {
         let alert = UIAlertController(title: "Howdy!", message: "You tapped me!", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .cancel))
         self.present(alert, animated: true)
+        testValue += 1
     }
-    
 
     let frameworkTesting = ObjectFromFramework(testValue: 33)
     

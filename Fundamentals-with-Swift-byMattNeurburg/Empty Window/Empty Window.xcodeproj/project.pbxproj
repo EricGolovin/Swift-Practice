@@ -14,7 +14,8 @@
 		E900AC9A240438CD00C1BE96 /* Empty_Window.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E900AC98240438CD00C1BE96 /* Empty_Window.xcdatamodeld */; };
 		E900AC9C240438CE00C1BE96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E900AC9B240438CE00C1BE96 /* Assets.xcassets */; };
 		E900AC9F240438CE00C1BE96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E900AC9D240438CE00C1BE96 /* LaunchScreen.storyboard */; };
-		E900ACAA240438CE00C1BE96 /* Empty_WindowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E900ACA9240438CE00C1BE96 /* Empty_WindowTests.swift */; };
+		E900ACAA240438CE00C1BE96 /* EmptyWindowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E900ACA9240438CE00C1BE96 /* EmptyWindowTests.swift */; };
+		E96FC08C240D57DB00B69F17 /* EmptyWindowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96FC08B240D57DB00B69F17 /* EmptyWindowUITests.swift */; };
 		E9A746192405BBA1002BABC5 /* MyCoolFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9A746102405BBA1002BABC5 /* MyCoolFramework.framework */; };
 		E9A746202405BBA1002BABC5 /* MyCoolFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A7461F2405BBA1002BABC5 /* MyCoolFrameworkTests.swift */; };
 		E9A746222405BBA1002BABC5 /* MyCoolFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = E9A746122405BBA1002BABC5 /* MyCoolFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -30,6 +31,13 @@
 
 /* Begin PBXContainerItemProxy section */
 		E900ACA6240438CE00C1BE96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E900AC84240438CD00C1BE96 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E900AC8B240438CD00C1BE96;
+			remoteInfo = "Empty Window";
+		};
+		E96FC08E240D57DB00B69F17 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E900AC84240438CD00C1BE96 /* Project object */;
 			proxyType = 1;
@@ -84,8 +92,12 @@
 		E900AC9E240438CE00C1BE96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E900ACA0240438CE00C1BE96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E900ACA5240438CE00C1BE96 /* Empty WindowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Empty WindowTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E900ACA9240438CE00C1BE96 /* Empty_WindowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empty_WindowTests.swift; sourceTree = "<group>"; };
+		E900ACA9240438CE00C1BE96 /* EmptyWindowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyWindowTests.swift; sourceTree = "<group>"; };
 		E900ACAB240438CE00C1BE96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E96FC089240D57DB00B69F17 /* EmptyWindowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmptyWindowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E96FC08B240D57DB00B69F17 /* EmptyWindowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyWindowUITests.swift; sourceTree = "<group>"; };
+		E96FC08D240D57DB00B69F17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E96FC093240D5C6700B69F17 /* TestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestPlan.xctestplan; sourceTree = "<group>"; };
 		E9A746102405BBA1002BABC5 /* MyCoolFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyCoolFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9A746122405BBA1002BABC5 /* MyCoolFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCoolFramework.h; sourceTree = "<group>"; };
 		E9A746132405BBA1002BABC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -117,6 +129,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E96FC086240D57DB00B69F17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E9A7460D2405BBA1002BABC5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -140,9 +159,10 @@
 			children = (
 				E9A746362405C570002BABC5 /* MyCoolPackage */,
 				E900AC8E240438CD00C1BE96 /* Empty Window */,
-				E900ACA8240438CE00C1BE96 /* Empty WindowTests */,
 				E9A746112405BBA1002BABC5 /* MyCoolFramework */,
 				E9A7461E2405BBA1002BABC5 /* MyCoolFrameworkTests */,
+				E900ACA8240438CE00C1BE96 /* Empty WindowTests */,
+				E96FC08A240D57DB00B69F17 /* EmptyWindowUITests */,
 				E900AC8D240438CD00C1BE96 /* Products */,
 				E9A746372405C598002BABC5 /* Frameworks */,
 			);
@@ -155,6 +175,7 @@
 				E900ACA5240438CE00C1BE96 /* Empty WindowTests.xctest */,
 				E9A746102405BBA1002BABC5 /* MyCoolFramework.framework */,
 				E9A746182405BBA1002BABC5 /* MyCoolFrameworkTests.xctest */,
+				E96FC089240D57DB00B69F17 /* EmptyWindowUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -166,6 +187,7 @@
 				E900AC91240438CD00C1BE96 /* SceneDelegate.swift */,
 				E900AC93240438CD00C1BE96 /* ViewController.swift */,
 				E900AC95240438CD00C1BE96 /* Main.storyboard */,
+				E96FC093240D5C6700B69F17 /* TestPlan.xctestplan */,
 				E9A7467824083C11002BABC5 /* RedButton.swift */,
 				E9A746762407EA15002BABC5 /* View.xib */,
 				E900AC9B240438CE00C1BE96 /* Assets.xcassets */,
@@ -180,10 +202,19 @@
 		E900ACA8240438CE00C1BE96 /* Empty WindowTests */ = {
 			isa = PBXGroup;
 			children = (
-				E900ACA9240438CE00C1BE96 /* Empty_WindowTests.swift */,
+				E900ACA9240438CE00C1BE96 /* EmptyWindowTests.swift */,
 				E900ACAB240438CE00C1BE96 /* Info.plist */,
 			);
 			path = "Empty WindowTests";
+			sourceTree = "<group>";
+		};
+		E96FC08A240D57DB00B69F17 /* EmptyWindowUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E96FC08B240D57DB00B69F17 /* EmptyWindowUITests.swift */,
+				E96FC08D240D57DB00B69F17 /* Info.plist */,
+			);
+			path = EmptyWindowUITests;
 			sourceTree = "<group>";
 		};
 		E9A746112405BBA1002BABC5 /* MyCoolFramework */ = {
@@ -266,6 +297,24 @@
 			productReference = E900ACA5240438CE00C1BE96 /* Empty WindowTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		E96FC088240D57DB00B69F17 /* EmptyWindowUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E96FC090240D57DB00B69F17 /* Build configuration list for PBXNativeTarget "EmptyWindowUITests" */;
+			buildPhases = (
+				E96FC085240D57DB00B69F17 /* Sources */,
+				E96FC086240D57DB00B69F17 /* Frameworks */,
+				E96FC087240D57DB00B69F17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E96FC08F240D57DB00B69F17 /* PBXTargetDependency */,
+			);
+			name = EmptyWindowUITests;
+			productName = EmptyWindowUITests;
+			productReference = E96FC089240D57DB00B69F17 /* EmptyWindowUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		E9A7460F2405BBA1002BABC5 /* MyCoolFramework */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9A746272405BBA1002BABC5 /* Build configuration list for PBXNativeTarget "MyCoolFramework" */;
@@ -319,6 +368,10 @@
 						CreatedOnToolsVersion = 11.3.1;
 						TestTargetID = E900AC8B240438CD00C1BE96;
 					};
+					E96FC088240D57DB00B69F17 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = E900AC8B240438CD00C1BE96;
+					};
 					E9A7460F2405BBA1002BABC5 = {
 						CreatedOnToolsVersion = 11.3.1;
 						LastSwiftMigration = 1130;
@@ -346,6 +399,7 @@
 				E900ACA4240438CE00C1BE96 /* Empty WindowTests */,
 				E9A7460F2405BBA1002BABC5 /* MyCoolFramework */,
 				E9A746172405BBA1002BABC5 /* MyCoolFrameworkTests */,
+				E96FC088240D57DB00B69F17 /* EmptyWindowUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -363,6 +417,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E900ACA3240438CE00C1BE96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E96FC087240D57DB00B69F17 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -403,7 +464,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E900ACAA240438CE00C1BE96 /* Empty_WindowTests.swift in Sources */,
+				E900ACAA240438CE00C1BE96 /* EmptyWindowTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E96FC085240D57DB00B69F17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E96FC08C240D57DB00B69F17 /* EmptyWindowUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +499,11 @@
 			isa = PBXTargetDependency;
 			target = E900AC8B240438CD00C1BE96 /* Empty Window */;
 			targetProxy = E900ACA6240438CE00C1BE96 /* PBXContainerItemProxy */;
+		};
+		E96FC08F240D57DB00B69F17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E900AC8B240438CD00C1BE96 /* Empty Window */;
+			targetProxy = E96FC08E240D57DB00B69F17 /* PBXContainerItemProxy */;
 		};
 		E9A7461B2405BBA1002BABC5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -664,6 +738,44 @@
 			};
 			name = Release;
 		};
+		E96FC091240D57DB00B69F17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U87X99UU87;
+				INFOPLIST_FILE = EmptyWindowUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ericgolovin.EmptyWindowUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Empty Window";
+			};
+			name = Debug;
+		};
+		E96FC092240D57DB00B69F17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U87X99UU87;
+				INFOPLIST_FILE = EmptyWindowUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ericgolovin.EmptyWindowUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Empty Window";
+			};
+			name = Release;
+		};
 		E9A746282405BBA1002BABC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -787,6 +899,15 @@
 			buildConfigurations = (
 				E900ACB2240438CE00C1BE96 /* Debug */,
 				E900ACB3240438CE00C1BE96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E96FC090240D57DB00B69F17 /* Build configuration list for PBXNativeTarget "EmptyWindowUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E96FC091240D57DB00B69F17 /* Debug */,
+				E96FC092240D57DB00B69F17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
