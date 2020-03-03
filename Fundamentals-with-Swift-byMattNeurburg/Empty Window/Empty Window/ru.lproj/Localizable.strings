@@ -1,0 +1,9 @@
+/* Dismiss */
+"Accept" = "ОК";
+
+/* Say hello */
+"Greeting" = "Привет";
+
+/* User tapped button */
+"Tapped" = "Ты нажал меня!";
+
