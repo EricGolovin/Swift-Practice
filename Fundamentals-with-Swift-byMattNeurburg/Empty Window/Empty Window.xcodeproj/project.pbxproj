@@ -28,6 +28,8 @@
 		E9A74644240722E2002BABC5 /* TestTargetFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A7464324072295002BABC5 /* TestTargetFile.swift */; };
 		E9A746772407EA15002BABC5 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9A746762407EA15002BABC5 /* View.xib */; };
 		E9A7467924083C11002BABC5 /* RedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A7467824083C11002BABC5 /* RedButton.swift */; };
+		E9EC5D7C240F10DA0062A05C /* MyHorizLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EC5D7B240F10DA0062A05C /* MyHorizLine.swift */; };
+		E9EC5D7E240F12BD0062A05C /* MyBoundedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EC5D7D240F12BD0062A05C /* MyBoundedLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +116,8 @@
 		E9A7464324072295002BABC5 /* TestTargetFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTargetFile.swift; sourceTree = "<group>"; };
 		E9A746762407EA15002BABC5 /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 		E9A7467824083C11002BABC5 /* RedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedButton.swift; sourceTree = "<group>"; };
+		E9EC5D7B240F10DA0062A05C /* MyHorizLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHorizLine.swift; sourceTree = "<group>"; };
+		E9EC5D7D240F12BD0062A05C /* MyBoundedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBoundedLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +194,8 @@
 				E900AC8F240438CD00C1BE96 /* AppDelegate.swift */,
 				E900AC91240438CD00C1BE96 /* SceneDelegate.swift */,
 				E900AC93240438CD00C1BE96 /* ViewController.swift */,
+				E9EC5D7D240F12BD0062A05C /* MyBoundedLabel.swift */,
+				E9EC5D7B240F10DA0062A05C /* MyHorizLine.swift */,
 				E900AC95240438CD00C1BE96 /* Main.storyboard */,
 				E96FC093240D5C6700B69F17 /* TestPlan.xctestplan */,
 				E9A7467824083C11002BABC5 /* RedButton.swift */,
@@ -466,6 +472,8 @@
 				E900AC92240438CD00C1BE96 /* SceneDelegate.swift in Sources */,
 				E900AC9A240438CD00C1BE96 /* Empty_Window.xcdatamodeld in Sources */,
 				E9A7467924083C11002BABC5 /* RedButton.swift in Sources */,
+				E9EC5D7E240F12BD0062A05C /* MyBoundedLabel.swift in Sources */,
+				E9EC5D7C240F10DA0062A05C /* MyHorizLine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
