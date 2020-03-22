@@ -15,6 +15,7 @@
 		E95EA0DA24250E2500150A25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E95EA0D824250E2500150A25 /* LaunchScreen.storyboard */; };
 		E95EA0E524250E2500150A25 /* Book_Samples_CH01Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95EA0E424250E2500150A25 /* Book_Samples_CH01Tests.swift */; };
 		E95EA0F024250E2500150A25 /* Book_Samples_CH01UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95EA0EF24250E2500150A25 /* Book_Samples_CH01UITests.swift */; };
+		E9FAD84E24278D1800EA0A1D /* DesignableViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FAD84D24278D1800EA0A1D /* DesignableViewExample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		E95EA0EB24250E2500150A25 /* Book Samples CH01UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Book Samples CH01UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E95EA0EF24250E2500150A25 /* Book_Samples_CH01UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book_Samples_CH01UITests.swift; sourceTree = "<group>"; };
 		E95EA0F124250E2500150A25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9FAD84D24278D1800EA0A1D /* DesignableViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableViewExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				E95EA0CF24250E2500150A25 /* SceneDelegate.swift */,
 				E95EA0D124250E2500150A25 /* ViewController.swift */,
 				E95EA0D324250E2500150A25 /* Main.storyboard */,
+				E9FAD84D24278D1800EA0A1D /* DesignableViewExample.swift */,
 				E95EA0D624250E2500150A25 /* Assets.xcassets */,
 				E95EA0D824250E2500150A25 /* LaunchScreen.storyboard */,
 				E95EA0DB24250E2500150A25 /* Info.plist */,
@@ -262,6 +265,7 @@
 				E95EA0D224250E2500150A25 /* ViewController.swift in Sources */,
 				E95EA0CE24250E2500150A25 /* AppDelegate.swift in Sources */,
 				E95EA0D024250E2500150A25 /* SceneDelegate.swift in Sources */,
+				E9FAD84E24278D1800EA0A1D /* DesignableViewExample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

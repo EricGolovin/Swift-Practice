@@ -10,6 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    // MARK: Figure 1.15-1
+//    var v2: UIView!
+//    var constraintsWith = [NSLayoutConstraint]()
+//    var constraintsWithout = [NSLayoutConstraint]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // MARK: Figure 1.1
@@ -175,19 +180,19 @@ class ViewController: UIViewController {
         //        ])
         
         // MARK: Example page 40
-        let v1 = UIView(frame: CGRect(x: 100, y: 111, width: 132, height: 194))
-        v1.backgroundColor = .red
-        let v2 = UIView()
-        v2.backgroundColor = .green
-        let v3 = UIView()
-        v3.backgroundColor = .purple
-        
-        self.view.addSubview(v1)
-        v1.addSubview(v2)
-        v1.addSubview(v3)
-        
-        v2.translatesAutoresizingMaskIntoConstraints = false
-        v3.translatesAutoresizingMaskIntoConstraints = false
+        //        let v1 = UIView(frame: CGRect(x: 100, y: 111, width: 132, height: 194))
+        //        v1.backgroundColor = .red
+        //        let v2 = UIView()
+        //        v2.backgroundColor = .green
+        //        let v3 = UIView()
+        //        v3.backgroundColor = .purple
+        //
+        //        self.view.addSubview(v1)
+        //        v1.addSubview(v2)
+        //        v1.addSubview(v3)
+        //
+        //        v2.translatesAutoresizingMaskIntoConstraints = false
+        //        v3.translatesAutoresizingMaskIntoConstraints = false
         
         //        v1.addConstraint(
         //            NSLayoutConstraint(item: v2,
@@ -260,8 +265,108 @@ class ViewController: UIViewController {
         //                               attribute: .bottom,
         //                               multiplier: 1,
         //                               constant: 0))
-        NSLayoutConstraint.activate([ v2.leadingAnchor.constraint(equalTo:v1.leadingAnchor), v2.trailingAnchor.constraint(equalTo:v1.trailingAnchor), v2.topAnchor.constraint(equalTo:v1.topAnchor), v2.heightAnchor.constraint(equalToConstant:10), v3.widthAnchor.constraint(equalToConstant:20), v3.heightAnchor.constraint(equalToConstant:20), v3.trailingAnchor.constraint(equalTo:v1.trailingAnchor), v3.bottomAnchor.constraint(equalTo:v1.bottomAnchor)
-        ])
+        //        NSLayoutConstraint.activate([
+        //            v2.leadingAnchor.constraint(equalTo:v1.leadingAnchor),
+        //            v2.trailingAnchor.constraint(equalTo:v1.trailingAnchor),
+        //            v2.topAnchor.constraint(equalTo:v1.topAnchor), v2.heightAnchor.constraint(equalToConstant:10),
+        //            v3.widthAnchor.constraint(equalToConstant:20), v3.heightAnchor.constraint(equalToConstant:20),
+        //            v3.trailingAnchor.constraint(equalTo:v1.trailingAnchor),
+        //            v3.bottomAnchor.constraint(equalTo:v1.bottomAnchor)
+        //        ])
+        
+        // MARK: Figure 1.15
+        //        let v1 = UIView()
+        //        v1.backgroundColor = .red
+        //        v1.translatesAutoresizingMaskIntoConstraints = false
+        //        let v2 = UIView()
+        //        v2.backgroundColor = .yellow
+        //        v2.translatesAutoresizingMaskIntoConstraints = false
+        //        let v3 = UIView()
+        //        v3.backgroundColor = .blue
+        //        v3.translatesAutoresizingMaskIntoConstraints = false
+        //
+        //        self.view.addSubview(v1)
+        //        self.view.addSubview(v2)
+        //        self.view.addSubview(v3)
+        //
+        //        self.v2 = v2 // retain
+        //
+        //        // construct constraints
+        //        let c1 = NSLayoutConstraint.constraints(withVisualFormat:
+        //            "H:|-(20)-[v(100)]", metrics: nil, views: ["v":v1])
+        //        let c2 = NSLayoutConstraint.constraints(withVisualFormat:
+        //            "H:|-(20)-[v(100)]", metrics: nil, views: ["v":v2])
+        //        let c3 = NSLayoutConstraint.constraints(withVisualFormat:
+        //            "H:|-(20)-[v(100)]", metrics: nil, views: ["v":v3])
+        //        let c4 = NSLayoutConstraint.constraints(withVisualFormat:
+        //            "V:|-(100)-[v(20)]", metrics: nil, views: ["v":v1])
+        //        let c5with = NSLayoutConstraint.constraints(withVisualFormat:
+        //            "V:[v1]-(20)-[v2(20)]-(20)-[v3(20)]", metrics: nil, views: ["v1":v1, "v2":v2, "v3":v3])
+        //        let c5without = NSLayoutConstraint.constraints(withVisualFormat:
+        //            "V:[v1]-(20)-[v3(20)]", metrics: nil, views: ["v1":v1, "v3":v3])
+        //
+        //        // apply common constraints
+        //        NSLayoutConstraint.activate([c1, c3, c4].flatMap{$0}) // first set of constraints (for when v2 is present)
+        //        self.constraintsWith.append(contentsOf:c2)
+        //        self.constraintsWith.append(contentsOf:c5with)
+        //
+        //        // second set of constraints (for when v2 is absent)
+        //        self.constraintsWithout.append(contentsOf:c5without)
+        //
+        //        // apply first set
+        //        NSLayoutConstraint.activate(self.constraintsWith)
+        //
+        //        func doSwap() {
+        //            if self.v2.superview != nil {
+        //                self.v2.removeFromSuperview()
+        //                NSLayoutConstraint.deactivate(self.constraintsWith)
+        //                NSLayoutConstraint.activate(self.constraintsWithout)
+        //            } else {
+        //                self.view.addSubview(v2)
+        //                NSLayoutConstraint.deactivate(self.constraintsWithout)
+        //                NSLayoutConstraint.activate(self.constraintsWith)
+        //            }
+        //        }
+        
+        
+        
+        // MARK: Figure 1.16
+//        let v1 = UIView()
+//        let v2 = UIView()
+//        let v3 = UIView()
+//        let v4 = UIView()
+//
+//        v1.backgroundColor = .green
+//        v2.backgroundColor = .red
+//        v3.backgroundColor = .purple
+//        v4.backgroundColor = .blue
+//
+//        let sv = UIStackView()
+//
+//        sv.axis = .vertical
+//        sv.alignment = .fill
+//        sv.distribution = .equalSpacing
+//        sv.translatesAutoresizingMaskIntoConstraints = false
+//
+//        sv.addArrangedSubview(v1)
+//        sv.addArrangedSubview(v2)
+//        sv.addArrangedSubview(v3)
+//        sv.addArrangedSubview(v4)
+//
+//        self.view.addSubview(sv)
+//
+//        let marg = self.view.layoutMarginsGuide
+//        let safe = self.view.safeAreaLayoutGuide
+//
+//        NSLayoutConstraint.activate([
+//            sv.topAnchor.constraint(equalTo: safe.topAnchor),
+//            sv.leadingAnchor.constraint(equalTo: marg.leadingAnchor),
+//            sv.trailingAnchor.constraint(equalTo: marg.trailingAnchor),
+//            sv.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
+//        ])
+        
+        // MARK: Figure 1.24
+        
     }
 }
 
