@@ -13,6 +13,9 @@
 		E9B2C492243CE614005541E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9B2C490243CE614005541E2 /* Main.storyboard */; };
 		E9B2C494243CE615005541E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9B2C493243CE615005541E2 /* Assets.xcassets */; };
 		E9B2C497243CE615005541E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9B2C495243CE615005541E2 /* LaunchScreen.storyboard */; };
+		E9CA0855243E7AD400E38713 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CA0854243E7AD400E38713 /* AboutViewController.swift */; };
+		E9CA0857243E7F9600E38713 /* Bullseye.html in Resources */ = {isa = PBXBuildFile; fileRef = E9CA0856243E7F9600E38713 /* Bullseye.html */; };
+		E9CA085A243E801E00E38713 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9CA0859243E801E00E38713 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		E9B2C493243CE615005541E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9B2C496243CE615005541E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9B2C498243CE615005541E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9CA0854243E7AD400E38713 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		E9CA0856243E7F9600E38713 /* Bullseye.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Bullseye.html; sourceTree = "<group>"; };
+		E9CA0859243E801E00E38713 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9CA085A243E801E00E38713 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,7 @@
 			children = (
 				E9B2C489243CE614005541E2 /* Bullseye */,
 				E9B2C488243CE614005541E2 /* Products */,
+				E9CA0858243E801E00E38713 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +67,22 @@
 				E9B2C48A243CE614005541E2 /* AppDelegate.swift */,
 				E9B2C48C243CE614005541E2 /* SceneDelegate.swift */,
 				E9B2C48E243CE614005541E2 /* ViewController.swift */,
+				E9CA0854243E7AD400E38713 /* AboutViewController.swift */,
 				E9B2C490243CE614005541E2 /* Main.storyboard */,
 				E9B2C493243CE615005541E2 /* Assets.xcassets */,
+				E9CA0856243E7F9600E38713 /* Bullseye.html */,
 				E9B2C495243CE615005541E2 /* LaunchScreen.storyboard */,
 				E9B2C498243CE615005541E2 /* Info.plist */,
 			);
 			path = Bullseye;
+			sourceTree = "<group>";
+		};
+		E9CA0858243E801E00E38713 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9CA0859243E801E00E38713 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9B2C497243CE615005541E2 /* LaunchScreen.storyboard in Resources */,
+				E9CA0857243E7F9600E38713 /* Bullseye.html in Resources */,
 				E9B2C494243CE615005541E2 /* Assets.xcassets in Resources */,
 				E9B2C492243CE614005541E2 /* Main.storyboard in Resources */,
 			);
@@ -140,6 +159,7 @@
 			files = (
 				E9B2C48F243CE614005541E2 /* ViewController.swift in Sources */,
 				E9B2C48B243CE614005541E2 /* AppDelegate.swift in Sources */,
+				E9CA0855243E7AD400E38713 /* AboutViewController.swift in Sources */,
 				E9B2C48D243CE614005541E2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
